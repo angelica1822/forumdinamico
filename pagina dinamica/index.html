@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dinamico</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+    <h1><center>FORMULARIO DINAMICO</center></h1>
+    <form action="" method="post">
+        <div id="davidlpls">
+            <div>
+                <h3>IDIOMAS</h3><br>
+                <div>
+                    <span>Idiomas</span><input type="text" name="idiomas[]" autocomplete="off" required/>
+                </div>
+                <div>
+                    <span>Nivel</span><input type="text" name="nivel[]" autocomplete="off" required />
+                </div>
+            </div>
+        </div>
+        <input type="button" value="+" id="agregar" />
+        <div id="david1">
+            <div>
+                <h3>EXPERENCIA LABORAl</h3>
+                <div>
+                    <span>Campo </span><input type="text" name="campo[]" autocomplete="off" required/>
+                </div>
+                <div>
+                    <span>Pais</span><input type="text" name="pais[]" autocomplete="off" required/>
+                </div>
+                <div>
+                    <span>Fechas</span><input type="text" name="fecha[]" autocomplete="off"required />
+                </div>
+                <div>
+                    <span>Que hizo</span>
+                    <input type="text" name="hizo[]" autocomplete="off" required/>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="+" id="agregar1" />
+        <div id="david2">
+            <div>
+                <h3>Formacion</h3>
+                <div>
+                    <span>Estudio Realizado</span><input type="text" name="estudio[]" autocomplete="off" required/>
+                </div>
+                <div>
+                    <span>Centro</span><input type="text" name="centro[]" autocomplete="off"required />
+                </div>
+                <div>
+                    <span>Pais</span><input type="text" name="pais[]" autocomplete="off" required/>
+                </div>
+                <div>
+                    <span>Fecha</span><input type="text" name="fecha[]" autocomplete="off" required/>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="+" id="agregar2" />
+        <div id="david3">
+            <div>
+                <h3>Habilidades</h3>
+                <div>
+                    <span>Habilidades</span><input type="text" name="Habilidades[]" autocomplete="off"required />
+                </div>
+            </div>
+        </div>
+        <input type="button" value="+" id="agregar3" />
+        <div id="david4">
+            <div>
+                <h3>Aptitudes
+
+                </h3>
+                <div>
+                    <span>Aptitudes</span><input type="text" name="Aptitudes[]" autocomplete="off" required/>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="+" id="agregar4" />
+
+          <input type="submit" value="Submit">
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
