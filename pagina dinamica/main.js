@@ -131,4 +131,37 @@ btn4_agregar.addEventListener("click", function( ){
     D.append([div_aptitudes,borrar], div_principal);
     D.append(div_principal, D.id('david4') );
 } );
+function abrirNuevaPestana() {
+    var idiomas = document.getElementById("idiomas[]").value;
+    var nivel = document.getElementById("nivel[]").value;
+    var campo = document.getElementById("campo[]").value;
+    var pais = document.getElementById("pais[]").value;
+    var fechas1 = document.getElementById("fecha[]").value;
+    var hizo = document.getElementById("hizo[]").value;
+    var estudio = document.getElementById("estudio[]").value;
+    var CENTRO = document.getElementById("centro[]").value;
+    var pais2 = document.getElementById("pais[]").value;
+    var fceha2 = document.getElementById("fecha[]").value;
+    var Habilidades = document.getElementById("Habilidades[]").value;
+    var Aptitudes = document.getElementById("Aptitudes[]").value;
+  
+    var contenido = "<h1>Valores del formulario:</h1>";
+    contenido += "<p>Idiomas: " + idiomas + "</p>";
+    contenido += "<p>Nivel: " + nivel + "</p>";
+    contenido += "<p>Campo: " + campo + "</p>";
+    contenido += "<p>pais: " + pais + "</p>";
+    contenido += "<p>Fecha: " + fechas1 + "</p>";
+    contenido += "<p>Que hizo: " + hizo + "</p>";
+    contenido += "<p>Estudios: " + estudio+ "</p>";
+    contenido += "<p>Centro: " + CENTRO+ "</p>";
+    contenido += "<p>Pais: " + pais2 + "</p>";
+    contenido += "<p>fecha: " + fceha2 + "</p>";
+    contenido += "<p>Habilidades: " + Habilidades + "</p>";
+    contenido += "<p>Aptitudes: " + Aptitudes + "</p>";
+
+
+    var nuevaPestana = window.open();
+    nuevaPestana.document.write(contenido);
+    
+  }
 
